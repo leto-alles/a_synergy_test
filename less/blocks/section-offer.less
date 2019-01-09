@@ -1,0 +1,421 @@
+.offer__time p {
+	margin: 0;
+}
+
+.offer__time-date {
+	.c-offer__time-date;
+	line-height: 75px;
+	padding-right: 5px;
+}
+
+.offer__time-month {
+	.c-offer__time-month;
+}
+
+.offer__time-hour {
+	.c-offer__time-hour;
+}
+
+.offer__time-description {
+	.c-offer__time-description;
+	padding-top: 15px;
+	padding-left: 5px;
+}
+
+.offer__title {
+	width: 460px;
+	.c-offer__title;
+	.untouchable;
+	margin-top: 45px;
+	margin-bottom: 0;
+}
+
+.offer__title-description {
+	width: 365px;
+	.c-offer__title-description;
+	.untouchable;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.offer__video{
+	width: 265px;
+	height: 120px;
+	margin-top: 15px;
+}
+
+.offer__video-link {
+	width: 120px;
+	height: 120px;
+	background-image: url('../img/target-pic.png');
+	background-repeat: no-repeat;
+	background-position: -15px -55px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*---form_registration_block---*/
+
+.offer__registration{
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	float: right;
+}
+
+.offer__registration-form {
+	width: 435px;
+	height: 640px;
+	text-align: center;
+	background-color: rgba(30, 30, 30, 0.4);
+}
+
+.offer__registration-title{
+	.c-offer__registration-title;
+	.untouchable;
+	margin: 0;
+	padding-top: 45px;
+	padding-bottom: 10px;
+}
+
+.offer__registration-addition{
+	font-size: 22px;
+	text-transform: none;
+}
+
+.offer__registration-form input {
+	width: 278px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.toggle-block{
+    width: 318px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.offer__registration-form .checkbox-toggle {
+	width: 318px;
+	height: 50px;
+	-webkit-appearance: none;
+	      appearance: none;
+	-moz-appearance: none;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: -5px;
+}
+
+.offer__registration-form .checkbox-toggle:before {
+	content: '';	
+	width: 144px;
+    height: 41px;
+    border-radius: 45px;
+	background: #ffffff;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+.checkbox-toggle:checked:before {
+	left: 168px;
+}
+
+.toggle-live{
+	.c-toggle;
+	.untouchable;
+	width: 50px;
+	position: absolute;
+    top: 33px;
+    left: 65px;
+}
+
+.toggle-online {
+	.c-toggle;
+	.untouchable;
+	width: 50px;
+	position: absolute;
+    top: 33px;
+    left: 220px;
+    color:#ffffff;
+}
+
+.switch-active{ 
+	color:#839fb1;
+}
+
+.switch-active-pic:before {
+	content: '';
+	width: 35px;
+	height: 35px;
+	background-image: url('../img/toggle-pic.png');
+	background-repeat: no-repeat;
+	background-position: -5px -4px;
+	position: absolute;
+    left: -43px;
+    top: -6px;
+}
+
+.switch-nonactive {
+	color:#ffffff;
+}
+
+.switch-nonactive-pic:before {
+	content: '';
+	width: 35px;
+	height: 35px;
+	background-image: url('../img/toggle-pic.png');
+	background-repeat: no-repeat;
+	background-position: -50px -4px;
+	position: absolute;
+    left: -35px;
+    top: -6px;
+}
+
+.license-block {
+	display: inline-block;
+    width: 318px;
+    margin-top: 95px;
+}
+
+.license-block input {
+	display:none;
+}
+
+.license-agreement-title {
+	width:250px;
+	.c-license-block;
+	.untouchable;
+	display: block;
+	padding-left: 65px;
+	position: relative;
+}
+
+.license-agreement-title:before {
+	content:'';
+	width:30px;
+	height:30px;
+	position: absolute;
+	top: 0;
+    left: 20px;
+    border: 1px solid #ffffff;
+}
+
+input[type=checkbox]:checked + .license-agreement-title:after{
+	content:'';
+    position: absolute;
+    left: 25px;
+    top: -2px;
+	background-image: url('../img/target-pic.png');
+	background-repeat: no-repeat;
+    background-position: -110px -10px;
+	width: 30px;
+	height: 30px;
+}
+
+input[type=checkbox]:checked + .license-agreement-title:before {
+	width: 20px;
+    height: 20px;
+    background: white;
+    outline: 1px solid white;
+    outline-offset: 4px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.submit-block input {
+	background-color: #542749;
+	border: none;
+	.c-form-submit;
+	margin-bottom:10px;
+}
+
+.submit-block input:hover {
+	height: 62px;
+	color: #2f1042;
+    background-color: #fff602;
+    line-height: 5px;
+    border-bottom: 5px solid #8f6d1d;
+}
+
+.submit-block input:active {
+	background-color: #fbbc05;
+	color: #2f1042;
+	border: none;
+}
+
+.participants-title {
+	display: block;
+	.c-participants-title;
+	.untouchable;
+	margin: 0;
+}
+
+/*---social_block---*/
+
+.social-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.social-block__description {
+	width: 100%;
+	.c-social-block__description;
+	.untouchable;
+	flex-shrink: 0;
+	margin: 0;
+}
+
+.social-block__link {
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/social-pic.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding: 0 4px;
+}
+
+.vk {
+	background-position: 0 -5px;
+}
+
+.fb {
+	background-position: -45px -5px;
+}
+
+.goo {
+	background-position: -95px -5px;
+}
+
+.tw {
+	background-position: -145px -5px;
+}
+
+.cls {
+	background-position: -195px -5px;
+}
+
+@media (min-width: 320px) {
+
+	.main-offer {
+		height: 800px;
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 100%), url(../img/asana-pic.png);
+		background-position: center;
+		margin-top: -240px;
+	}
+
+	.offer__registration {
+		display: none;
+	}
+
+	.offer__time{
+		width: 245px;
+		.untouchable;
+		margin: 0 auto;
+		padding-top: 250px;
+	}
+
+	.offer__title {
+		width: 100%;
+		font-size: 75px;
+		line-height: 76px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.offer__title-description {
+		width: 100%;
+		font-size: 34px;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	.offer__video {
+		margin: 15px auto 0 auto;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+	.main-offer {
+		width: 100%;
+		height: 800px;
+		background-image: url('../img/asana-pic.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: -120px;
+		padding-top: 120px;
+		margin-bottom: -3px;
+	}
+
+	.offer__title {
+		margin-top: 45px; 
+	}
+
+	.offer__title-description{
+		margin-top: 15px; 
+	}
+
+	.offer__registration {
+		width: 50%;
+		display: block;
+	}
+
+	.offer__registration-form {
+		width: 100%;
+	}
+
+	.offer__time {
+		width: 50%;
+		margin-left: 85px;
+		padding-top: 35px;
+	}
+
+	.offer__video{
+		margin: 30px auto 0 60px;
+	}
+}
+
+@media (min-width: 1190px) {
+	
+	.main-offer {
+		height: 980px;
+	}
+
+	.offer__registration{
+		width: 435px;
+	    margin-top: 30px;
+	}
+
+	.offer__time{
+		margin-left:60px;
+	}
+
+	.offer__title{
+		width: 460px;
+		font-size: 110px;
+		line-height: 93px;
+		text-align: left;
+	}
+
+	.offer__title-description{
+		width: 365px;
+		font-size: 44px;
+		line-height: 48px;
+		text-align: left;
+		margin:0;
+	}
+	
+	.offer__video{
+		margin: 15px 0 0 0;
+	}
+}

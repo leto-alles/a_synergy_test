@@ -1,0 +1,308 @@
+.intensive-course {
+	height: 515px;
+	background-color: #f3ebf5;
+	position: relative;
+}
+
+.intensive-course:before {
+	content:'';
+	width: 630px;
+	height: 515px;
+	background-color: rgba(44, 76, 101, 0.1);
+	position: absolute;
+}
+
+.intensive-course:after {
+	content:'';
+	width: 225px;
+	height:438px;
+	background-image: url('../img/guru-pic.png');
+	position: absolute;
+	left:370px;
+	bottom:-25px;
+}
+
+.intensive-course__content-block {
+	width: 885px;
+    height: 515px;
+	.untouchable;
+	float: right;
+	margin-right: 365px;
+	padding-left: 40px;
+}
+
+.course-title {
+	.c-information-title;
+	padding-top: 40px;
+}
+
+.course-description {
+	width: 700px;
+	.c-course-description;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.description-compact {
+	width: 600px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	padding: 35px 0;
+}
+
+.course-date-list {
+	list-style: none;
+	margin:0;
+	padding:0;
+	border-top: 1px solid #66b045;
+}
+
+.course__time-date {
+	.c-offer__time-date;
+	line-height: 75px;
+	padding-right: 20px;
+}
+
+.course__time-month {
+	.c-offer__time-month;
+}
+
+.course__time-hour {
+	.c-offer__time-hour;
+}
+
+.intensive-course__link {
+	pointer-events: all;
+	background-color: transparent;
+	outline: 1px solid #542749;
+	color: #542749;
+	margin:0;
+	margin-top: 35px;
+    padding: 15px 55px;
+}
+
+.intensive-course__link:hover {
+	background-color: #542749;
+	color: #ffffff;
+}
+
+.intensive-course__information {
+    width: 500px;
+    .c-intensive-course__information;
+   	display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.intensive-course__phone {
+	pointer-events: all;
+	text-decoration: none;
+	font-weight: bold;
+	color: #542749;
+}
+
+@media (min-width: 320px) {
+	
+	.intensive-course {
+		height: 830px;
+	}
+
+	.intensive-course:before {
+		width: 100%;
+		height: 415px;
+	}
+
+	.intensive-course:after {
+		left: 10px;
+		bottom: -15px;
+	}
+
+	.intensive-course__content-block {
+		width: 100%;
+		position: absolute;
+		z-index: 15;
+		padding: 0;
+		margin: 0;
+	}
+
+	.course-title {
+		width: 320px;
+		font-size: 40px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.course-description {
+		width: 320px;
+		font-size: 20px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.description-compact {
+		padding: 10px 0;
+	}
+
+ 	.course-date-list {
+ 		width: 320px;
+ 		border-top:none;
+ 		background: rgba(255, 255, 255, 0.3);
+ 		margin: 0 auto;
+ 	}
+
+	.course-date-list__item {
+		width: 170px;
+		display: block;
+		margin: 0 auto; 
+		padding-top: 10px;
+	}
+
+	.course__time-date {
+		font-size: 60px;    
+		line-height: 50px;
+    	padding-right: 5px;
+	}
+
+	.course__time-month {
+		font-size: 20px;
+    	line-height: 25px;
+	}
+
+	.course__time-hour {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.popap__link.intensive-course__link {
+		display: block;
+		padding: 15px 30px;
+		margin: 30px auto;
+	}
+
+	.intensive-course__information {
+		width: 300px;
+		font-size: 14px;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.intensive-course {
+		height:515px;
+	}
+
+	.intensive-course:before{
+		width:50%;
+		height: 515px;
+	}
+
+	.intensive-course:after {
+		left: 5px;
+		margin-left: 35%;
+		bottom: -15px;
+	}
+
+	.course-title {
+		padding-right: 50%;
+	}
+
+	.course-description {
+		padding-right: 50%;
+	}
+
+	.course-date-list {
+		background: none;
+	    margin: -395px auto 0 auto;
+	    padding-left: 50%;
+	}
+
+	.popap__link.intensive-course__link{
+		margin: 105px auto 0 auto;
+	}
+
+	.intensive-course__information {
+	    margin: -150px auto 0 auto;
+	    padding-left: 50%;
+	}
+
+	.course-date-list__item {
+		width: 290px;
+		display: inline-block;
+		padding-top: 25px;
+	}
+
+	.course__time-date {
+    	font-size: 83px;
+    	line-height: 75px;
+    	padding-right: 10px;
+	}
+
+	.course__time-month {
+		    font-size: 26px;
+		    line-height: 36px;
+	}
+
+	.course__time-hour {
+		font-size: 30px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: 1190px) {
+	.intensive-course__content-block {
+		width: 65%;
+    	right: 0;
+	}
+
+	.intensive-course:before {
+		width: 35%;
+	    height: 515px;
+	}
+
+	.intensive-course:after {
+		left: 15%;
+    	bottom: -25px;
+        margin-left:0;
+	}
+
+	.course-title {
+		width: 700px;
+		text-align: left;
+		padding-right: 0;
+		font-size: 48px;
+		margin-left: 50px;
+	}
+
+	.course-description {
+		width: 700px;
+		text-align: left;
+		margin-left:50px;
+	}
+
+	.course-date-list {
+		background-color: inherit;
+		border-top: 1px solid #66b045;
+		width: 735px;
+		margin: 30px 0 0 50px;
+		padding-left:0;
+	}
+
+	.course-date-list__item {
+		width: 240px;
+	}
+
+	.popap__link.intensive-course__link {
+		 margin: 45px 0 15px 50px;
+		 display: inline-block;
+	}
+
+	.intensive-course__information {
+		padding: 0;
+		margin: 0 0 0 55px;
+		display: inline-block;
+	}
+}

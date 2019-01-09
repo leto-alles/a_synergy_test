@@ -1,0 +1,316 @@
+.information-title{
+    width: 792px;
+    border-right: 1px solid #d2cad5;
+}
+
+.information-title__decoration{
+    .c-information-title;
+    .untouchable;
+    display: block;
+    padding: 100px 60px;
+}
+
+.information-enumeration { 
+    counter-reset: item;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.information-enumeration__item { 
+    width: 395px;
+    height: 295px;
+    .untouchable;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    border:1px solid #d2cad5;
+}
+
+.information-enumeration:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 100%;
+    width: 365px;
+    border-bottom: 1px solid #d2cad5;
+}
+
+.information-enumeration:after {
+    content: '';
+    position: absolute;
+    top: 295px;
+    left: -365px;
+    width: 365px;
+    border-bottom: 1px solid #d2cad5;
+}
+
+.information-enumeration__item:first-child,
+.information-enumeration__item:last-child {
+    background-color: #fbf9fc;
+}
+
+.information-enumeration__item:nth-child(2) {
+    background-color: #f5f0f7;
+}
+
+.information-enumeration__item:nth-child(5) {
+    background-color:#faf7fb;
+}
+
+.information-enumeration__item:before { 
+    width: 80%;
+    content: counter(item, decimal-leading-zero) " "; 
+    counter-increment: item;
+    .c-item-number;
+    float: left;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.enumeration__item-title{
+    .c-item-title;
+    display:block;
+    padding-left:50px;
+    padding-right: 50px;
+}
+
+.popap__link {
+    width: 180px;
+    .c-popap-link;
+        -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #542749;
+    padding:15px 55px;
+    margin: 35px 0 35px 60px;
+}
+
+.popap__link:hover {
+    background-color: transparent;
+    outline: 1px solid #542749;
+    color:#542749;
+}
+
+.container-decoration .participants-title {
+    width:185px;
+    font-size: 18px;
+    line-height: 24px;
+    color:#66b045;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.partipants-block {
+    display: inline-block;
+    width: 365px;
+    height: 130px;
+    padding-top: 25px;
+    border-right: 1px solid red;
+}
+
+@media (min-width: 320px) {
+
+    .container-decoration {
+        border: none;
+    }
+
+    .information-title {
+        font-size: 40px;
+        border:none;
+        width:100%;
+    }
+
+    .information-title__decoration {
+        font-size: 40px;
+        padding: 100px 15px;
+        text-align: center;
+        width: 290px;
+    }
+
+    .information-enumeration:before {
+        display: none;
+    }
+
+    .information-enumeration:after {
+        display: none;
+    }
+
+    .information-enumeration {
+        flex-direction: column;
+    }
+
+    .information-enumeration__item {
+        width:320px;
+        height: 150px;
+        border: none;
+        border-top: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item:before{
+        width: 50px;
+        height: 100%;
+        font-size: 40px;
+        line-height: 40px;
+        padding: 10px 5px 0 15px;
+    }
+
+    .enumeration__item-title{
+        font-size: 20px;
+        padding: 0;
+        padding-top: 7px;
+    }
+
+    .information-enumeration__item:last-child{
+        border-bottom: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item:last-child:after {
+        display: none;
+    }
+
+    .popap__link{
+        padding: 15px 30px;
+        margin: 35px 0 35px 40px;
+    }
+
+    .container-decoration .participants-title{
+        text-align: center;
+        margin: 0 0 15px 65px;
+    }
+}
+
+@media (min-width: 768px) {
+    .information-enumeration {
+        flex-direction: row;
+        border:1px solid #d2cad5;
+    }
+
+    .container-decoration{
+        border-left: 1px solid #d2cad5;
+        border-right: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item:last-child {
+        border-bottom: none;
+    }
+
+    .information-enumeration__item:first-child,
+    .information-enumeration__item:nth-child(2) {
+        border-top: none;
+    }
+
+    .information-enumeration__item:nth-child(2n+1){
+        width: 383px;
+        border-right: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item {
+        width: 382px;
+    }
+
+    .enumeration__item-title {
+        padding-right: 7px;
+    }
+
+    .information-title__decoration {
+        width: 335px;
+        text-align: left;
+        padding: 35px;
+    }
+
+    .container-decoration .participants-title{
+        float: right;
+        margin: 45px 90px 15px 10px;
+    }
+}
+
+@media (min-width: 1190px) {
+    
+    .information-title {
+        width: 791px;
+        border-right: 1px solid #d2cad5;
+    }
+
+    .information-title__decoration {
+        width: 360px;
+        font-size: 48px;
+        padding: 90px 60px;
+    }
+
+    .information-enumeration__item:nth-child(2n+1) {
+        width: 395px;
+    }
+
+    .information-enumeration__item:nth-child(2n) {
+        border-right: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item:nth-child(3),
+    .information-enumeration__item:nth-child(6) {
+        border-right: none;
+    }
+
+    .information-enumeration__item:nth-child(1),
+    .information-enumeration__item:nth-child(2),
+    .information-enumeration__item:nth-child(3) {
+        border-bottom: 1px solid #d2cad5;
+    }
+
+    .information-enumeration__item {
+        width: 395px;
+        height: 295px;
+        border:none;
+    }
+
+    .information-enumeration__item:before {
+        width: 85%;
+        height: auto;
+        font-size: 48px;
+        line-height: 60px;
+        padding-top: 60px;
+        padding-left: 50px;
+
+    }
+
+    .enumeration__item-title {
+        font-size: 24px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .information-enumeration:before {
+        display: block;
+    }
+
+    .information-enumeration:after {
+        display: block;
+    }
+
+    .information-enumeration__item:last-child:after {
+        content: '';
+        height: 136px;
+        display: block;
+        -webkit-transform: translate(-1px, 112px);
+                transform: translate(-1px, 112px);
+        border-left: 1px solid #d2cad5;
+    }
+
+    .popap__link {
+        margin: 35px 0 35px 50px;
+    }
+    
+    .container-decoration .participants-title {
+        float: none;
+        text-align: left;
+        margin: 0 0 0px 100px;
+    }
+}

@@ -1,0 +1,172 @@
+.target-audience {
+	width: 100%;
+	height: 690px;
+	background-image: url('../img/yoga-pic.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.audience-title {
+	width: 385px;
+	.c-information-title;
+	.untouchable;
+	color: #ffffff;
+	padding-top: 65px;
+	padding-left: 45px;
+}
+
+.audience-list {
+	list-style: none;
+    margin: 20px 0 0 50px;
+    padding: 0;
+}
+
+.audience-list__item {
+	width:100%;
+	.c-audience-list__item;
+	position: relative;
+	padding: 10px 0;
+}
+
+.audience-list__item:before {
+	content:'';
+	display: inline-block;
+	width: 125px;
+	height:125px;
+	background-image: url('../img/lection-pic.png');
+	background-repeat: no-repeat;
+}
+
+.audience-list__item-position {
+	width:280px;
+	position: absolute;
+    top: 25%;
+    left: 150px;
+}
+
+.hand-pic:before{
+	background-position: -150px 0;
+}
+
+.lotos-pic:before{
+	background-position: -300px 0;
+}
+
+@media (min-width: 320px) {
+
+	.target-audience{
+		height: 565px;
+		background-position: right;		
+	}
+
+	.target-audience__block {
+		width: 100%;
+		height: auto;
+		float: inherit;
+	}
+
+	.audience-title {
+		width: 320px;
+		font-size: 40px;
+		text-align: center;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+
+	.audience-list {
+		width: 310px;
+		margin: 0 auto;
+	}
+
+	.audience-list__item:before {
+		width: 75px;
+		height: 75px;
+		background-size: 265px;
+	}
+
+	.hand-pic:before {
+		background-position: -88px 0;
+	}
+
+	.lotos-pic:before {
+		background-position: -175px 0;
+	}
+
+	.audience-list__item-position {
+		width: 225px;
+		top: 15%;
+		left: 85px;
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.target-audience {
+		background-position: center;
+	}
+
+	.target-audience__block {
+		width: 383px;
+		height: 690px;
+		margin-left: 50%;
+	}
+
+	.audience-list__item:before {
+		width: 90px;
+		height: 90px;
+		background-size: 320px;
+	}
+
+	.hand-pic:before {
+		background-position: -105px 0;
+	}
+
+	.lotos-pic:before {
+	   	background-position: -212px 0;
+	}
+
+	.audience-list__item-position {
+		left: 100px;
+	}
+}
+
+@media (min-width: 1190px) {
+	
+	.target-audience {
+	    height: 690px;
+	}	
+
+	.audience-title {
+		text-align: left;
+		font-size: 48px;
+		width: 385px;
+		padding-left: 45px;
+	}
+
+	.audience-list {
+		margin: 20px 0 0 50px;
+	}
+
+	.audience-list__item:before {
+		width: 125px;
+		height: 125px;
+		background-size: auto;
+	}
+
+	.hand-pic:before {
+		background-position: -150px 0;
+	}
+
+	.lotos-pic:before {
+		background-position: -300px 0;
+	}
+
+	.audience-list__item-position {
+		width: 280px;
+		position: absolute;
+		top: 25%;
+		left: 150px;
+		font-size: 24px;
+	}
+}
